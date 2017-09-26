@@ -4,8 +4,8 @@ const ContactInfo = (props) => {
   return (
     <div className='contact-info'>
       <p>903 372 0114</p>
-      <p>ryan.deland.edwards@gmail.com</p>
-      <p>https://github.com/hewhowearspants</p>
+      <a href='mailto:ryan.deland.edwards@gmail.com'>ryan.deland.edwards@gmail.com</a>
+      <a href='https://github.com/hewhowearspants'>https://github.com/hewhowearspants</a>
     </div>
   )
 }
