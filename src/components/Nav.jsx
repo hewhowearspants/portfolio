@@ -30,8 +30,8 @@ class Nav extends Component {
       <nav>
         <ul>
           <li onClick={() => {this.props.setPage('home'); this.setPopup(null)}}>Home</li>
-          <li onClick={() => this.setPopup('projects')}>Projects</li>
-          <li onClick={() => this.setPopup('contact')}>Contact</li>
+          <li className={this.state.currentPopup === 'projects' ? 'selected' : ''} onClick={() => this.setPopup('projects')}>Projects</li>
+          <li className={this.state.currentPopup === 'contact' ? 'selected' : ''} onClick={() => this.setPopup('contact')}>Contact</li>
         </ul>
         <PopUp 
           setPage={this.props.setPage}
