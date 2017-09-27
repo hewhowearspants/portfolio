@@ -61,7 +61,6 @@ class Project extends Component {
           </div>
           <div className='info-right'>
             <div className='technologies'>{this.renderTechnologies()}</div>
-            
           </div>
         </div>
       </div>
