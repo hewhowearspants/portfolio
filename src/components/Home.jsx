@@ -8,7 +8,10 @@ const Home = (props) => {
         <h1>Edwards</h1>
       </div>
       <div className='hero'><div className='hero-overlay'></div></div>
-      <p className='blurb'>“Hi, I'm Ryan, a former Army officer turned full-stack web developer. I'm a tenacious problem solver with a passion for clean code and intuitive user experiences. Have a look around, check out some of my projects, or just shoot me a message.”</p>
+      <p className='blurb'>“Hi, I'm Ryan, a former Army officer turned full-stack web developer. I'm a tenacious problem solver with a passion for clean code, scalable functionality, and intuitive user experiences. Have a look around, check out some of my projects, or just shoot me a message.”</p>
+      <div className="mouse">
+        <span></span>
+      </div>
       <div className='skills-tools-container'>
         <div className='skills-container'>
           <h2>SKILLS</h2>
