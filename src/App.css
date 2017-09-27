@@ -27,8 +27,6 @@ h1, h2 {
 }
 
 main {
-  /* height: calc(100vh - 52px); */
-  /* margin-bottom: 52px; */
   overflow: auto;
 }
 
@@ -73,6 +71,64 @@ main {
   margin-right: 0;
 }
 
+.mouse {
+  /* display: block; */
+  margin: 0 auto;
+  width: 26px;
+  height: 46px;
+  border-radius: 13px;
+  border: 2px solid #e8f380;
+  /* bottom: 40px; */
+  /* position: absolute; */
+  /* left: 50%; */
+  /* margin-left: -14px; */
+}
+
+.mouse span {
+  display: block; 
+  margin: 6px auto;
+  width: 2px;
+  height: 2px;
+  border-radius: 4px;
+  background: #e8f380;
+  border: 1px solid transparent;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+  animation-name: scroll;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+
 .skills-tools-container {
   display: flex;
   flex-direction: column;
@@ -111,11 +167,6 @@ main {
   transition: .25s all;
 }
 
-.skill:hover span,
-.tool:hover span {
-  opacity: 1;
-}
-
 .skill:hover,
 .tool:hover {
   perspective: 500px;
@@ -126,9 +177,17 @@ main {
 .tool span {
   color: rgba(30,30,30,1);
   font-weight: 400;
+  user-select: none;
+  cursor: default;
   text-shadow: 1px 0px 1px white, 0px 1px 1px white, -1px 0px 1px white, 0px -1px 1px white;
   opacity: 0;
   transition: .25s all;
+}
+
+.skill:hover span,
+.tool:hover span {
+  opacity: 1;
+  transform: scale(1.3);
 }
 
 nav {
@@ -189,6 +248,18 @@ nav ul li {
 .contact-info .links i {
   font-size: 26px;
   margin: 5px 15px;
+}
+
+.contact-info .links a:hover i,
+.contact-info .links a:active i {
+  transform: scale(1.1);
+  animation: flashing .6s linear infinite;
+}
+
+@keyframes flashing {
+  50% {
+    color: #e8f380;
+  }
 }
 
 .project-nav {
@@ -334,6 +405,15 @@ nav ul li {
   padding: 10px
 }
 
+footer {
+  background-color: rgba(200,200,200,.4);
+  padding: 10px;
+  margin-bottom: 58px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 @media screen and (min-width: 600px) {
   main {
     height: 100vh;
@@ -355,9 +435,11 @@ nav ul li {
     margin: 18vh 0px 52px;
   }
 
-  .skills-container,
+  .skills-container {
+    width: 70%;
+  }
   .tools-container {
-    width: 50%;
+    width: 30%;
   }
 
   .tools {
@@ -465,6 +547,12 @@ nav ul li {
   .screenshot-display {
     width: 80vw;
     height: 60vh;
+  }
+
+  footer {
+    margin-bottom: 0;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
 
