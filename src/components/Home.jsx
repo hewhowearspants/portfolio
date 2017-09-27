@@ -75,6 +75,10 @@ const Home = (props) => {
           </div>
         </div>
       </div>
+      <footer>
+        <p>© Ryan Edwards 2017</p>
+        <p>Built with <i className="fa fa-heart" aria-hidden="true"></i> and React</p>
+      </footer>
     </div>
   )
 }
