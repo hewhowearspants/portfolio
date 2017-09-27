@@ -8,7 +8,70 @@ const Home = (props) => {
         <h1>Edwards</h1>
       </div>
       <div className='hero'><div className='hero-overlay'></div></div>
-      <p className='blurb'>“As a former Army officer, I developed reliability and a level head through adversity. I do not give up easily, and work to solve difficult problems with a dogged determination. I am self-reliant, able to work independently to quickly absorb new concepts to solve those difficult problems, but at the same time, work well with a team due to my military experience. These are the traits that I bring to a programming environment as a web developer.”</p>
+      <p className='blurb'>“Hi, I'm Ryan, a former Army officer turned full-stack web developer. I'm a tenacious problem solver with a passion for clean code and intuitive user experiences. Have a look around, check out some of my projects, or just shoot me a message.”</p>
+      <div className='skills-tools-container'>
+        <div className='skills-container'>
+          <h2>SKILLS</h2>
+          <div className='skills'>
+            <div className='skill' style={{backgroundImage: "url('/images/icon-javascript.png')"}}>
+              <span>Javascript</span>
+            </div>
+            <div className='skill' style={{backgroundImage: "url('/images/icon-html.png')"}}>
+              <span>HTML</span>
+            </div>
+            <div className='skill' style={{backgroundImage: "url('/images/icon-css.png')"}}>
+              <span>CSS</span>
+            </div>
+            <div className='skill' style={{backgroundImage: "url('/images/icon-jquery.gif')"}}>
+              <span>jQuery</span>
+            </div>
+            <div className='skill' style={{backgroundImage: "url('/images/icon-react.png')"}}>
+              <span>React.js</span>
+            </div>
+            <div className='skill' style={{backgroundImage: "url('/images/icon-node.svg')"}}>
+              <span>Node.js</span>
+            </div>
+            <div className='skill' style={{backgroundImage: "url('/images/icon-express.png')"}}>
+              <span>Express</span>
+            </div>
+            <div className='skill' style={{backgroundImage: "url('/images/icon-socket-io.svg')"}}>
+              <span>socket.io</span>
+            </div>
+            <div className='skill' style={{backgroundImage: "url('/images/icon-postgresql.png')"}}>
+              <span>PostgreSQL</span>
+            </div>
+            <div className='skill' style={{backgroundImage: "url('/images/icon-firebase.png')"}}>
+              <span>Firebase</span>
+            </div>
+            <div className='skill' style={{backgroundImage: "url('/images/icon-ruby.png')"}}>
+              <span>Ruby</span>
+            </div>
+            <div className='skill' style={{backgroundImage: "url('/images/icon-ruby-on-rails.png')"}}>
+              <span>Rails</span>
+            </div>
+            <div className='skill' style={{backgroundImage: "url('/images/icon-git.png')"}}>
+              <span>Git</span>
+            </div>
+          </div>
+        </div>
+        <div className='tools-container'>
+          <h2>Tools</h2>
+          <div className='tools'>
+            <div className='tool' style={{backgroundImage: "url('/images/icon-github.png')"}}>
+              <span>Github</span>
+            </div>
+            <div className='tool' style={{backgroundImage: "url('/images/icon-heroku.png')"}}>
+              <span>Heroku</span>
+            </div>
+            <div className='tool' style={{backgroundImage: "url('/images/icon-postman.png')"}}>
+              <span>Postman</span>
+            </div>
+            <div className='tool' style={{backgroundImage: "url('/images/icon-CLI.png')"}}>
+              <span>CLI</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
