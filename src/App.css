@@ -138,11 +138,17 @@ main {
   background-color: rgba(200,200,200,.4);
 }
 
-.skills-container {
+.skills-container,
+.tools-container {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
+}
+
+.skills-container h2,
+.tools-container h2 {
+  user-select: none;
+  cursor: default;
 }
 
 .skills,
