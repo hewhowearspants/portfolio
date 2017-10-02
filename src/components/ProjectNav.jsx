@@ -6,7 +6,7 @@ class ProjectNav extends Component {
     let projectData = this.props.projectData;
     let projectIndex = 1;
     for (let project in projectData) {
-      projectList.push(
+      projectList.unshift(
         <div className='project-link' 
              key={projectIndex}
              onClick={() => {
