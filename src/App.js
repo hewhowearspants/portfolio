@@ -14,7 +14,7 @@ const projectData = {
       '/images/Blackjack-Screenshot-3.png'
     ],
     description: "Blackjack is a web browser game where players can bet, win, and lose it all.",
-    technologies: ['jQuery', 'HTML', 'CSS'],
+    technologies: ['Javascript', 'jQuery', 'HTML', 'CSS'],
     url: 'http://ryans-little-blackjack.bitballoon.com/',
     github: 'https://github.com/hewhowearspants/Project-01-Blackjack',
   },
