@@ -53,6 +53,20 @@ const projectData = {
     technologies: ['React.js', 'Ruby on Rails', 'Quill.js', 'CSS-Flexbox'],
     url: 'https://read-write.herokuapp.com/',
     github: 'https://github.com/hewhowearspants/read-write',
+  },
+  blackjackIO: {
+    name: 'Blackjack.io',
+    screenshots: [
+      '/images/Blackjack-io-screenshot-1.png',
+      '/images/Blackjack-io-screenshot-2.png',
+      '/images/Blackjack-io-screenshot-3.png',
+      '/images/Blackjack-io-screenshot-4.png',
+      '/images/Blackjack-io-screenshot-5.png',
+    ],
+    description: "Blackjack.io is a revamping of my original Blackjack game, adding sounds, music, flexbox, and using socket.io to add multiplayer and chat functionality",
+    technologies: ['Javascript', 'jQuery', 'Node.js', 'socket.io', 'HTML', 'CSS-Flexbox'],
+    url: 'http://blackjack-io.herokuapp.com/',
+    github: 'https://github.com/hewhowearspants/Blackjack-io'
   }
 }
 
