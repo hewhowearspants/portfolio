@@ -13,6 +13,13 @@ class ProjectNav extends Component {
   componentDidMount() {
     document.getElementsByClassName('project-nav-inner')[0].addEventListener('scroll', () => this.trackScrolling('Y'));
     document.getElementsByClassName('project-nav')[0].addEventListener('scroll', () => this.trackScrolling('X'));
+    let lastProject = Object.values(this.props.projectData)[0].name;
+    const bottomElement = document.getElementById(lastProject);
+    if (this.reachedEnd(bottomElement, 'bottom')) {
+      this.setState({
+        reachedBottom: true
+      })
+    }
   }
 
   reachedEnd(el, end) {
