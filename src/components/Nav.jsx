@@ -26,19 +26,22 @@ class Nav extends Component {
   }
   
   render() {
+    const { currentPopup } = this.state;
+    const { projectData } = this.props;
+
     return (
       <nav>
         <ul>
           <li onClick={() => {this.props.setPage('home'); this.setPopup(null)}}>Home</li>
-          <li className={this.state.currentPopup === 'projects' ? 'selected' : ''} onClick={() => this.setPopup('projects')}>Projects</li>
-          <li className={this.state.currentPopup === 'contact' ? 'selected' : ''} onClick={() => this.setPopup('contact')}>Contact</li>
+          <li className={currentPopup === 'projects' && 'selected'} onClick={() => this.setPopup('projects')}>Projects</li>
+          <li className={currentPopup === 'contact' && 'selected'} onClick={() => this.setPopup('contact')}>Contact</li>
         </ul>
         <PopUp 
           setPage={this.props.setPage}
           setPopup={this.setPopup}
           setProject={this.props.setProject}
           currentPopup={this.state.currentPopup} 
-          projectData={this.props.projectData} 
+          projectData={projectData} 
         />
       </nav>
     )
