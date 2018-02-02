@@ -5,10 +5,18 @@ import ProjectNav from './ProjectNav';
 
 class PopUp extends Component {
   render() {
+    const { currentPopup } = this.props;
+
     return (
-      <div className={`popup ${!this.props.currentPopup ? 'hidden' : ''}`}>
-        {this.props.currentPopup === 'contact' ? <ContactInfo /> : ''}
-        {this.props.currentPopup === 'projects' ? <ProjectNav setPage={this.props.setPage} setPopup={this.props.setPopup} setProject={this.props.setProject} projectData={this.props.projectData} /> : ''}
+      <div className={`popup ${!currentPopup && 'hidden'}`}>
+        {currentPopup === 'contact' && <ContactInfo />}
+        {currentPopup === 'projects' && 
+          <ProjectNav 
+            setPage={this.props.setPage} 
+            setPopup={this.props.setPopup} 
+            setProject={this.props.setProject} 
+            projectData={this.props.projectData} 
+          />}
       </div>
     )
   }
