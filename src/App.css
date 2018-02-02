@@ -245,6 +245,7 @@ nav ul li {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-self: flex-start;
   height: 100%;
 }
 
@@ -553,9 +554,8 @@ footer {
   }
 
   .popup {
-    height: auto; 
+    height: calc(100vh - 75px);
     display: flex; 
-    flex-direction: column;
     align-items: flex-end;
     justify-content: center;
     opacity: 1;
@@ -566,11 +566,12 @@ footer {
     width: 285px;
     padding: 10px;
     align-items: flex-end;
+    align-self: flex-start;
+    justify-content: flex-start;
   }
 
   .contact-info .links svg {
     font-size: 42px;
-    /* height: 42px; */
     margin: 10px 15px 0px;
   }
 
@@ -659,7 +660,7 @@ footer {
   }
 
   .hidden {
-    /* opacity: 0; */
+    display: none;
   }
 
   .project h1 {
