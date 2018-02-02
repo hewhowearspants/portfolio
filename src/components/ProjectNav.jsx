@@ -89,7 +89,21 @@ class ProjectNav extends Component {
   render() {
     return (
       <div className='project-nav'>
-        {this.props.projectData ? this.renderProjects() : ''}
+        <div className='project-nav-inner'>
+          {!this.state.reachedTop && 
+            <div id='top-arrow'>
+              <div className='arrow'>
+                <span><i className="fas fa-angle-double-up"></i></span><span><i className="fas fa-angle-double-up"></i></span>
+              </div>
+            </div>}
+          {this.props.projectData && this.renderProjects()}
+          {!this.state.reachedBottom && 
+            <div id='bottom-arrow'>
+              <div className='arrow'>
+                <span><i className="fas fa-angle-double-up"></i></span><span><i className="fas fa-angle-double-up"></i></span>
+              </div>
+            </div>}
+        </div>
       </div>
     )
   }
