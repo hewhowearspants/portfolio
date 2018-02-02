@@ -61,18 +61,23 @@ class ProjectNav extends Component {
     let projectData = this.props.projectData;
     let projectIndex = 1;
     for (let project in projectData) {
+      let { name, screenshots, thumbnailIndex } = projectData[project];
       projectList.unshift(
-        <div className='project-link' 
+        <div className='project-link'
+             id={name} 
              key={projectIndex}
              onClick={() => {
                this.props.setPage('project');
                this.props.setPopup(null);
                this.props.setProject(project);
              }}
-             style={{backgroundImage: `url(${projectData[project].screenshots[0]})`}}
+             style={{
+               backgroundImage: `url(${screenshots[thumbnailIndex]})`,
+               marginBottom: projectIndex !== 1 ? '10px' : ''
+             }}
              >
           <div className='project-link-overlay'>
-            <p>{projectData[project].name}</p>
+            <p>{name}</p>
           </div>
         </div>
       )
