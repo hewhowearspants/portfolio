@@ -57,7 +57,10 @@ class Project extends Component {
         <div className='info'>
           <div className='info-left'>
             <div className='description'><p>{this.props.project.description}</p></div>
-            <div className='links'><a href={this.props.project.url}>Demo</a><a href={this.props.project.github}>Code</a></div>
+            <div className='links'>
+              <a href={this.props.project.url} target="_blank" rel="noopener noreferrer">Demo</a>
+              <a href={this.props.project.github} target="_blank" rel="noopener noreferrer">Code</a>
+            </div>
           </div>
           <div className='info-right'>
             <div className='technologies'>{this.renderTechnologies()}</div>
