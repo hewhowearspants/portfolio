@@ -581,6 +581,7 @@ footer {
     align-items: flex-end;
     align-self: flex-start;
     justify-content: flex-start;
+    animation: fly-in-from-right .25s;
   }
 
   .contact-info .links svg {
@@ -597,6 +598,7 @@ footer {
     top: 75px;
     right: 0px;
     bottom: 0px;
+    animation: fly-in-from-right .25s;
   }
 
   #top-arrow,
