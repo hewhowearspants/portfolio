@@ -33,6 +33,15 @@ main {
 .name {
   margin-top: 50vh;
   margin-left: 10px;
+  animation-name: fly-in-from-right;
+  animation-duration: .5s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes fly-in-from-right {
+  0% {
+    transform: translateX(100vw);
+  }
 }
 
 .name h1 {
@@ -496,6 +505,10 @@ footer {
   .home h1 {
     font-size: 80px;
     line-height: 70px;
+  }
+
+  .name {
+    animation-duration: .75s;
   }
 
   .skills-tools-container {
