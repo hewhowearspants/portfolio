@@ -7,10 +7,11 @@ class Nav extends Component {
     super();
 
     this.state = {
-      currentPopup: null,
+      currentPopup: null
     }
 
     this.setPopup = this.setPopup.bind(this);
+    this.handleOutsideClick = this.handleOutsideClick.bind(this);
   }
 
   setPopup(popup) {
@@ -24,25 +25,44 @@ class Nav extends Component {
       })
     }
   }
+
+  handleOutsideClick(e) {
+    if (this.node.contains(e.target)) {
+      return;
+    } else {
+      this.setPopup(null);
+      document.removeEventListener('click', this.handleOutsideClick, false)
+    }
+  }
   
   render() {
     const { currentPopup } = this.state;
     const { projectData } = this.props;
 
     return (
-      <nav>
+      <nav ref={node => { this.node = node; }}>
         <ul>
           <li onClick={() => {this.props.setPage('home'); this.setPopup(null)}}>Home</li>
-          <li className={currentPopup === 'projects' && 'selected'} onClick={() => this.setPopup('projects')}>Projects</li>
-          <li className={currentPopup === 'contact' && 'selected'} onClick={() => this.setPopup('contact')}>Contact</li>
+          <li className={currentPopup === 'projects' && 'selected'} 
+            onClick={() => {
+              this.setPopup('projects');
+              document.addEventListener('click', this.handleOutsideClick, false);
+            }}>Projects</li>
+          <li className={currentPopup === 'contact' && 'selected'} 
+            onClick={() => {
+              this.setPopup('contact');
+              document.addEventListener('click', this.handleOutsideClick, false);
+            }}>Contact</li>
         </ul>
-        <PopUp 
-          setPage={this.props.setPage}
-          setPopup={this.setPopup}
-          setProject={this.props.setProject}
-          currentPopup={this.state.currentPopup} 
-          projectData={projectData} 
-        />
+        { currentPopup &&
+          <PopUp 
+            setPage={this.props.setPage}
+            setPopup={this.setPopup}
+            setProject={this.props.setProject}
+            currentPopup={currentPopup} 
+            projectData={projectData} 
+          />
+        }
       </nav>
     )
   }
