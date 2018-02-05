@@ -33,13 +33,19 @@ class App extends Component {
   }
 
   render() {
+    const { currentPage, currentProject } = this.state;
+
     return (
       <div className="App">
         <main>
-          {this.state.currentPage === 'home' ? <Home /> : ''}
-          {this.state.currentPage === 'project' ? <Project project={this.state.currentProject} /> : ''}
+          {currentPage === 'home' && <Home />}
+          {currentPage === 'project' && <Project project={currentProject} />}
         </main>
-        <Nav setPage={this.setPage} setProject={this.setProject} projectData={this.state.projectData} />
+        <Nav 
+          setPage={this.setPage} 
+          setProject={this.setProject} 
+          projectData={projectData} 
+        />
       </div>
     );
   }
