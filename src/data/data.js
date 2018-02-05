@@ -86,14 +86,14 @@ export const projectData = {
   }
 }
 
-for (let project in projectData) {
-  projectData[project].screenshots.forEach(screenshot => {
-    let link = document.createElement('link');
-    link.setAttribute('rel', 'prefetch');
-    link.setAttribute('href', `${screenshot}`);
-    document.head.appendChild(link);
-  })
-}
+// for (let project in projectData) {
+//   projectData[project].screenshots.forEach(screenshot => {
+//     let link = document.createElement('link');
+//     link.setAttribute('rel', 'prefetch');
+//     link.setAttribute('href', `${screenshot}`);
+//     document.head.appendChild(link);
+//   })
+// }
 
 export const skillData = [
   {
