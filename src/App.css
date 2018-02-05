@@ -256,6 +256,7 @@ nav ul li {
   justify-content: center;
   align-self: flex-start;
   height: 100%;
+  z-index: 1;
 }
 
 .contact-info .links {
@@ -285,6 +286,7 @@ nav ul li {
   position: relative;
   overflow-x: auto;
   overflow-y: hidden;
+  z-index: 1;
 }
 
 .project-nav-inner {
