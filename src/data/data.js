@@ -89,8 +89,9 @@ export const projectData = {
 for (let project in projectData) {
   projectData[project].screenshots.forEach(screenshot => {
     let link = document.createElement('link');
-    link.setAttribute('rel', 'prefetch');
+    link.setAttribute('rel', 'preload');
     link.setAttribute('href', `${screenshot}`);
+    link.setAttribute('as', 'image');
     document.head.appendChild(link);
   })
 }
