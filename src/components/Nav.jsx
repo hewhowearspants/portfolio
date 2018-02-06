@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 
-import PopUp from './PopUp';
+import ContactInfo from './ContactInfo';
+import ProjectNav from './ProjectNav';
 
 class Nav extends Component {
   constructor() {
     super();
 
     this.state = {
-      currentPopup: null
+      currentPopup: null,
     }
 
     this.setPopup = this.setPopup.bind(this);
@@ -55,13 +56,16 @@ class Nav extends Component {
             }}>Contact</li>
         </ul>
         { currentPopup &&
-          <PopUp 
-            setPage={this.props.setPage}
-            setPopup={this.setPopup}
-            setProject={this.props.setProject}
-            currentPopup={currentPopup} 
-            projectData={projectData} 
-          />
+          <div className={`popup ${!currentPopup && 'hidden'}`}>
+            {currentPopup === 'contact' && <ContactInfo />}
+            {currentPopup === 'projects' && 
+              <ProjectNav 
+                setPage={this.props.setPage} 
+                setPopup={this.setPopup} 
+                setProject={this.props.setProject} 
+                projectData={projectData} 
+              />}
+          </div>
         }
       </nav>
     )
