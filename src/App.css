@@ -467,6 +467,7 @@ footer {
     animation-delay: .25s;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+    color: #e8f380;
   }
 
   @keyframes pokepoke {
