@@ -11,6 +11,14 @@ class Project extends Component {
     this.setScreenshot = this.setScreenshot.bind(this);
   }
 
+  componentWillReceiveProps(nextProps) {
+    if(this.props.project.name !== nextProps.project.name) {
+      this.setState({
+        currentScreenshot: 0,
+      })
+    }
+  }
+
   setScreenshot(direction) {
     this.setState((prevState) => {
       if (prevState.currentScreenshot === 0 && direction === -1) {
