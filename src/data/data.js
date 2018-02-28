@@ -37,7 +37,7 @@ export const projectData = {
     description: "Grandmaster.io is a combat card game similar to games like Blizzard's Hearthstone, meant to be played online between 2 players.",
     technologies: ['React.js', 'Express.js', 'Node.js', 'Socket.io', 'POSTGRESQL', 'Firebase', 'CSS-Flexbox'],
     url: 'https://grandmaster-io.herokuapp.com/',
-    github: 'https://github.com/hewhowearspants/Project-03-Card-Battle',
+    github: 'https://github.com/hewhowearspants/Grandmaster-io',
   },
   readWrite: {
     name: 'Read/Write',
