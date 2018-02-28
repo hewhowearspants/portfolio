@@ -38,11 +38,9 @@ class Project extends Component {
   }
 
   renderTechnologies() {
-    let techIndex = 0;
-    return this.props.project.technologies.map((tech) => {
-      techIndex++;
+    return this.props.project.technologies.map((tech, index) => {
       return (
-        <p key={techIndex}>{tech}</p>
+        <p key={index}>{tech}</p>
       )
     })
   }
