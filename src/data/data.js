@@ -86,16 +86,6 @@ export const projectData = {
   }
 }
 
-for (let project in projectData) {
-  projectData[project].screenshots.forEach(screenshot => {
-    let link = document.createElement('link');
-    link.setAttribute('rel', 'preload');
-    link.setAttribute('href', `${screenshot}`);
-    link.setAttribute('as', 'image');
-    document.head.appendChild(link);
-  })
-}
-
 export const skillData = [
   {
     name: 'Javascript',
@@ -187,3 +177,13 @@ export const toolData = [
     type: 'tool'
   }
 ]
+
+for (let project in projectData) {
+  projectData[project].screenshots.forEach(screenshot => {
+    let link = document.createElement('link');
+    link.setAttribute('rel', 'preload');
+    link.setAttribute('href', `${screenshot}`);
+    link.setAttribute('as', 'image');
+    document.head.appendChild(link);
+  })
+}
