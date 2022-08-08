@@ -1,5 +1,3 @@
-console.log('data loaded');
-
 export const projectData = {
   blackjack: {
     name: 'Blackjack',
@@ -102,19 +100,34 @@ export const skillData = [
     img: '/images/icon-css.png',
     type: 'skill'
   },
-  {
-    name: 'jQuery',
-    img: '/images/icon-jquery.gif',
-    type: 'skill'
-  },
   { 
     name: 'React.js',
     img: '/images/icon-react.png',
     type: 'skill'
   },
   {
+    name: 'Redux.js',
+    img: '/images/icon-redux.svg',
+    type: 'skill',
+  },
+  {
+    name: 'TypeScript',
+    img: '/images/icon-typescript.svg',
+    type: 'skill',
+  },
+  {
+    name: 'SASS',
+    img: '/images/icon-sass.png',
+    type: 'skill',
+  },
+  {
     name: 'Node.js',
     img: '/images/icon-node.svg',
+    type: 'skill'
+  },
+  {
+    name: 'jQuery',
+    img: '/images/icon-jquery.gif',
     type: 'skill'
   },
   {
@@ -158,7 +171,7 @@ export const skillData = [
 export const toolData = [
   {
     name: 'Github',
-    img: '/images/icon-github.png',
+    img: '/images/icon-github-light.png',
     type: 'tool'
   },
   {
