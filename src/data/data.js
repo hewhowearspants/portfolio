@@ -11,7 +11,7 @@ export const projectData = {
     thumbnailIndex: 0,
     description: "Blackjack is a web browser game where players can bet, win, and lose it all.",
     technologies: ['Javascript', 'jQuery', 'HTML', 'CSS'],
-    url: 'http://ryans-little-blackjack.bitballoon.com/',
+    url: 'https://ryans-little-blackjack-project.netlify.app/',
     github: 'https://github.com/hewhowearspants/Project-01-Blackjack',
   },
   theReadingList: {

@@ -10,7 +10,7 @@ const Home = (props) => {
         <h1>Edwards</h1>
       </div>
       <div className='hero'><div className='hero-overlay'></div></div>
-      <p className='blurb'>“Hi, I'm Ryan, a former Army officer turned full-stack web developer. I'm a tenacious problem solver with a passion for clean code, scalable functionality, and intuitive user experiences. Have a look around, check out some of my projects, or just shoot me a message.”</p>
+      <p className='blurb'>“Hi, I'm Ryan, a former US Army officer turned full-stack web developer. I'm a tenacious problem solver with a passion for clean code, scalable functionality, and intuitive user experiences. Have a look around, check out some of my projects, or just shoot me a message.”</p>
       <div className="mouse">
         <span></span>
       </div>
@@ -41,7 +41,7 @@ const Home = (props) => {
         </div>
       </div>
       <footer>
-        <p>© Ryan Edwards 2017</p>
+        <p>© Ryan Edwards 2022</p>
         <p>Built with <i className="fa fa-heart" aria-hidden="true"></i> and React</p>
       </footer>
     </div>
