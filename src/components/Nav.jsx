@@ -44,12 +44,12 @@ class Nav extends Component {
       <nav ref={node => { this.node = node; }}>
         <ul>
           <li onClick={() => {this.props.setPage('home'); this.setPopup(null)}}>Home</li>
-          <li className={currentPopup === 'projects' && 'selected'} 
+          <li className={currentPopup === 'projects' ? 'selected' : ''} 
             onClick={() => {
               this.setPopup('projects');
               document.addEventListener('click', this.handleOutsideClick, false);
             }}>Projects</li>
-          <li className={currentPopup === 'contact' && 'selected'} 
+          <li className={currentPopup === 'contact' ? 'selected' : ''} 
             onClick={() => {
               this.setPopup('contact');
               document.addEventListener('click', this.handleOutsideClick, false);
