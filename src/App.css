@@ -60,7 +60,7 @@ main {
   width: 75vw;
   right: 0;
   top: 0;
-  background: url('/images/hero.jpg');
+  background: url('hero.jpg');
   background-size: cover;
   z-index: -1;
   position: absolute;
