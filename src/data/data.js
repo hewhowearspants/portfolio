@@ -88,82 +88,66 @@ export const skillData = [
   {
     name: 'Javascript',
     img: '/images/icon-javascript.png',
-    type: 'skill'
   },
   {
     name: 'HTML',
-    img: '/images/icon-html.png',
-    type: 'skill' 
+    img: '/images/icon-html.png', 
   },
   {
     name: 'CSS',
     img: '/images/icon-css.png',
-    type: 'skill'
   },
   { 
     name: 'React.js',
     img: '/images/icon-react.png',
-    type: 'skill'
   },
   {
     name: 'Redux.js',
     img: '/images/icon-redux.svg',
-    type: 'skill',
   },
   {
     name: 'TypeScript',
     img: '/images/icon-typescript.svg',
-    type: 'skill',
   },
   {
     name: 'SASS',
     img: '/images/icon-sass.png',
-    type: 'skill',
   },
   {
     name: 'Node.js',
     img: '/images/icon-node.svg',
-    type: 'skill'
   },
   {
     name: 'jQuery',
     img: '/images/icon-jquery.gif',
-    type: 'skill'
   },
   {
     name: 'Express',
     img: '/images/icon-express.png',
-    type: 'skill'
   },
   {
     name: 'Socket.io',
     img: '/images/icon-socket-io.svg',
-    type: 'skill'
   },
   {
     name: 'PostgreSQL',
     img: '/images/icon-postgresql.png',
-    type: 'skill'
   },
   {
     name: 'Firebase',
     img: '/images/icon-firebase.png',
-    type: 'skill'
   },
   {
     name: 'Ruby',
     img: '/images/icon-ruby.png',
-    type: 'skill'
   },
   {
     name: 'Rails',
     img: '/images/icon-ruby-on-rails.png',
-    type: 'skill'
   },
   {
     name: 'Git',
     img: '/images/icon-git.png',
-    type: 'skill'
   }
 
 ]
@@ -172,22 +156,18 @@ export const toolData = [
   {
     name: 'Github',
     img: '/images/icon-github-light.png',
-    type: 'tool'
   },
   {
     name: 'Heroku',
     img: '/images/icon-heroku.png',
-    type: 'tool'
   },
   {
     name: 'Postman',
     img: '/images/icon-postman.png',
-    type: 'tool'
   },
   {
     name: 'CLI',
     img: '/images/icon-CLI.png',
-    type: 'tool'
   }
 ]
 
