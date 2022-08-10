@@ -2,7 +2,7 @@ import React from 'react';
 
 import { skillData, toolData } from '../data/data.js'
 
-const blurb = "Hi, I'm Ryan, a full-stack web developer and former US Army officer. I'm a tenacious problem solver with a passion for clean code, scalable functionality, and intuitive user experiences. Have a look around, check out some of my projects, or just shoot me a message.";
+const blurb = "Hi, I'm Ryan, a full-stack web developer and former US Army officer. I'm a tenacious problem solver with a passion for clean code, scalable functionality, and intuitive user experiences. Have a look around, check out some of my projects, or just send me a message.";
 
 const Home = (props) => {
   return (
