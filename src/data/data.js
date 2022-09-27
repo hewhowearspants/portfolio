@@ -81,6 +81,19 @@ export const projectData = {
     technologies: ['Javascript', 'React.js', 'socket.io', 'Node.js', 'CSS-Flexbox'],
     url: 'http://cardsagainstyoursanity.herokuapp.com',
     github: 'https://github.com/hewhowearspants/Cards-Against-Your-Sanity'
+  },
+  edwords: {
+    name: 'Edwords',
+    screenshots: [
+      '/images/Edwords-Screenshot-1.png',
+      '/images/Edwords-Screenshot-2.png',
+      '/images/Edwords-Screenshot-3.png',
+    ],
+    thumbnailIndex: 0,
+    description: 'Edwords is a shameless recreation of Wordle, but without being restricted to one word per day. Think of it as Practice Wordle!',
+    technologies: ['Typescript', 'React.js', 'SCSS'],
+    url: 'https://edwords.netlify.app',
+    github: 'https://github.com/hewhowearspants/wordle_clone',
   }
 }
 
